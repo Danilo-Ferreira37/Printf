@@ -1,6 +1,8 @@
-# ft_printf
+*This project has been created as part of the 42 curriculum by dosorio-*
 
-Reimplementation of the C standard library function `printf`, developed as part of the **42 School** curriculum.
+# Descripition
+
+Reimplementation of the C standard library function `printf`.
 
 This project builds a static library `libftprintf.a` providing `ft_printf()` and a small set of helper output functions.
 
