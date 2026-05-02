@@ -28,7 +28,7 @@ int	ft_putstr(char *s)
 		return (write(1, "(null)", 6));
 	while (s[i] != '\0')
 	{
-		count += ft_putchar(s[i]);
+		count += ft_putchar_fd(s[i]);
 		i++;
 	}
 	return (count);
@@ -43,11 +43,11 @@ int	ft_putnbr(int nbr)
 	nb = nbr;
 	if (nb < 0)
 	{
-		count += ft_putchar('-');
+		count += ft_putchar_fd('-');
 		nb *= -1;
 	}
 	if (nb >= 10)
-		count += ft_putnbr(nb / 10);
-	count += ft_putchar((nb % 10) + '0');
+		count += ft_putnbr_fd(nb / 10);
+	count += ft_putchar_fd((nb % 10) + '0');
 	return (count);
 }
